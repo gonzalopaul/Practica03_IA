@@ -47,11 +47,11 @@ public class Modelo {
             
 		    RandomForest cls = new RandomForest();
             // train
-            Instances inst = leerInstancias("App_Java/training_data/practica_3.arff");
+            Instances inst = leerInstancias("./training_data/practica_3.arff");
             cls.buildClassifier(inst);
 
             // serialize model
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("App_Java/models/objetoRFufc.model"));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./models/objetoRFufc.model"));
             oos.writeObject(cls);
             oos.flush();
             oos.close();
@@ -63,9 +63,9 @@ public class Modelo {
 
     public String aplicarModelo() {
         try{
-            Instances data = leerInstancias("App_Java/test_data/test.arff");
+            Instances data = leerInstancias("./test_data/test.arff");
             String[] valoresAtributos = {"Blue", "Red"};
-            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("App_Java/models/objetoRFufc.model");
+            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/objetoRFufc.model");
             return valoresAtributos[(int)clasificador.classifyInstance(data.instance(0))];
         }catch (Exception ex) {
             Logger.getLogger(Modelo.class.getName()).log(Level.SEVERE, null, ex);
@@ -82,7 +82,7 @@ public class Modelo {
         String datosUsuario = reader.readLine();
         System.out.println("Los datos se han introducido correctamente");
 
-        FileWriter fw = new FileWriter("App_Java/test_data/test.arff", true);
+        FileWriter fw = new FileWriter("./test_data/test.arff", true);
         fw.write(datosUsuario);
         fw.close();
 
