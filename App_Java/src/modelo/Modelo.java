@@ -84,6 +84,7 @@ public class Modelo {
 
         FileWriter fw = new FileWriter("./test_data/test.arff", true);
         fw.write(datosUsuario);
+	fw.write("\n");    
         fw.close();
 
     }
