@@ -53,3 +53,5 @@ Haríamos la siguiente consulta:
 6,Diestro,190,1,Zurdo,175,?
 ```
 Y obtendríamos como resultado BLUE, lo que significa que ganaría el primer combatiente.
+
+PARA REALIZAR UNA NUEVA CONSULTA, BORRE LA ULTIMA LÍNEA DE TEST.ARFF
