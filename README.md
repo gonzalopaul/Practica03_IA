@@ -50,6 +50,6 @@ Una vez ejecutada la aplicación, si nos interesa saber la predicción sobre el 
 
 Haríamos la siguiente consulta:
 ```
-3,Diestro,180,1,Zurdo,175,?
+6,Diestro,190,1,Zurdo,175,?
 ```
 Y obtendríamos como resultado BLUE, lo que significa que ganaría el primer combatiente.
