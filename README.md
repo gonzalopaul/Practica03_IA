@@ -36,3 +36,20 @@ $- make jar
 ```
 $- java -jar aprendizaje.jar
 ```
+3. Introducir los datos por pantalla en el siguiente orden y separados por comas, sin espacios entre sí.
+```
+RachaVictoriasBlue, PosturaBlue, AlcanceBlue, RachaVictoriasRed, PosturaRed, AlcanceRed, ?
+```
+**Importante añadir '?' al final, para que el modelo prediga el resultado del combate.
+Devolverá BLUE, si gana el primer combatiente, y RED si gana el segundo combatiente.
+
+# Ejemplo
+Una vez ejecutada la aplicación, si nos interesa saber la predicción sobre el siguiente combate:
+1. Combatiente 1: 3 victorias, diestro, y 180cm de alcance
+2. Combatiente 2: 1 victoria, zurdo y 175cm de alcance
+
+Haríamos la siguiente consulta:
+```
+3,Diestro,180,1,Zurdo,175,?
+```
+Y obtendríamos como resultado BLUE, lo que significa que ganaría el primer combatiente.
