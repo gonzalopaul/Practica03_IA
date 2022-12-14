@@ -1,0 +1,3 @@
+Main-Class: aplicacion.Principal
+Class-Path: lib/weka.jar
+

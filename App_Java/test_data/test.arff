@@ -1,0 +1,11 @@
+@RELATION test
+
+@attribute blue_Wins numeric
+@attribute blue_Stance {Diestro,Zurdo}
+@attribute blue_Reach numeric
+@attribute red_Wins numeric
+@attribute red_Stance {Diestro,Zurdo}
+@attribute red_Reach numeric
+@attribute winner {Blue,Red}
+
+@DATA
