@@ -75,7 +75,7 @@ public class Modelo {
     public static void pedirDatosUsuario() throws IOException, InterruptedException{
         System.out.println("Introduzca datos, separados por comas:");
         Thread.sleep(4);
-        System.out.println("Victorias Red, Stance Red, Alcance Red, Victorias Blue, Stance Blue, Alcance Blue,?");
+        System.out.println("Victorias Red, Postura Red, Alcance Red, Victorias Blue, Postura Blue, Alcance Blue,?");
         Thread.sleep(4);
         System.out.println("No olvide poner (?) en el campo que desea consultar");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
